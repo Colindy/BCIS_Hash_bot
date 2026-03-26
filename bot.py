@@ -29,8 +29,8 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    if message.content == "ping":
-        await message.channel.send("pong")
+    if message.content == "Hi" or "hi":
+        await message.channel.send("<:BCIS_Hi:emojiID>") # Found by running "\:emojiname:" in Discord
 
     await bot.process_commands(message)
 

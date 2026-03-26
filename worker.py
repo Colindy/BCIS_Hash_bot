@@ -42,8 +42,8 @@ async def worker():
 
         if result:
             plaintext = result.split(":")[1]
-            await job.ctx.send(f"✅ Cracked: `{plaintext}`")
+            await job.ctx.send(f"<:BCIS_Pwnd:emojiID> Cracked: `{plaintext}`")
         else:
-            await job.ctx.send("❌ Hash not cracked.")
+            await job.ctx.send("<:BCIS_FacePalm:emojiID> Hash not cracked.")
 
         job_queue.task_done()
